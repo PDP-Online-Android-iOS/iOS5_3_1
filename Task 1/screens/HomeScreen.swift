@@ -16,20 +16,16 @@ struct HomeScreen: View {
         
         VStack(alignment: .leading, spacing: 10) {
             Text("Email")
-                .padding(.leading, 10)
             
             TextField("Email", text: $textFieldEmail)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding(.leading, 10)
-                .padding(.bottom, 10)
             
             Text("Password")
-                .padding(.leading, 10)
             
             TextField("Password", text: $textFieldPassword)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding(.leading, 10)
         }
+        .padding()
 
     }
 }
